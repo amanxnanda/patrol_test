@@ -14,6 +14,14 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  patrol: ^3.3.0
 
 flutter:
   uses-material-design: true
+
+patrol:
+  app_name: Patrol Test
+  android:
+    package_name: com.amannanda.patrolTest
+  ios:
+    bundle_id: com.amannanda.patrolTest
