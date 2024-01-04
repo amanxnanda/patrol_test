@@ -4,16 +4,28 @@ void main() {
   runApp(const MainApp());
 }
 
-class MainApp extends StatelessWidget {
+class MainApp extends StatefulWidget {
   const MainApp({super.key});
 
   @override
+  State<MainApp> createState() => _MainAppState();
+}
+
+class _MainAppState extends State<MainApp> {
+  int _count = 0;
+
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Text('Count $_count'),
         ),
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          setState(() {
+            _count++;
+          });
+        }),
       ),
     );
   }

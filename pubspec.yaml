@@ -22,6 +22,6 @@ flutter:
 patrol:
   app_name: Patrol Test
   android:
-    package_name: com.amannanda.patrolTest
+    package_name: com.amannanda.patrol_test
   ios:
-    bundle_id: com.amannanda.patrolTest
+    bundle_id: com.amannanda.patrol_test
